@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚾ Fantasy Report — 2026-04-16</title>
+<style>
+:root {
+  --bg: #f6f8fa; --card: #fff; --border: #d0d7de;
+  --text: #1f2328; --muted: #656d76;
+  --red: #cf222e; --yellow: #9a6700; --green: #1a7f37; --blue: #0969da;
+  --red-bg: #fff0f0; --yellow-bg: #fff8c5; --green-bg: #dafbe1; --blue-bg: #ddf4ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  padding: 16px; max-width: 860px; margin: 0 auto;
+}
+h1 { font-size: 1.4rem; margin: 12px 0 20px; }
+h2 { font-size: 1.1rem; font-weight: 700; margin: 28px 0 12px;
+     padding-bottom: 6px; border-bottom: 2px solid var(--border); }
+h3 { font-size: 1rem; font-weight: 700; margin: 16px 0 8px; }
+
+/* Tables */
+.tbl-wrap { overflow-x: auto; margin-bottom: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+th, td { padding: 7px 12px; text-align: center;
+         border: 1px solid var(--border); white-space: nowrap; }
+thead th { background: var(--bg); font-weight: 600; }
+tbody tr:hover td { background: #f0f4f8; }
+
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border);
+        border-radius: 8px; padding: 14px 16px; margin: 10px 0; }
+.card-drop { border-left: 4px solid var(--red); }
+.card-add  { border-left: 4px solid var(--green); background: var(--green-bg); }
+.card-il   { border-left: 4px solid var(--yellow); background: var(--yellow-bg); }
+.card-gap  { border-left: 4px solid var(--border); }
+.card-gap.is-weak   { border-color: var(--red); }
+.card-gap.is-border { border-color: var(--yellow); }
+
+/* Tags / badges */
+.tag { display: inline-block; padding: 1px 8px; border-radius: 10px;
+       font-size: 0.78rem; font-weight: 600; margin: 0 2px; }
+.tag-red    { background: var(--red-bg); color: var(--red); }
+.tag-green  { background: var(--green-bg); color: var(--green); }
+.tag-yellow { background: var(--yellow-bg); color: var(--yellow); }
+.tag-blue   { background: var(--blue-bg); color: var(--blue); }
+.tag-gray   { background: var(--bg); color: var(--muted); }
+
+/* Typography helpers */
+.muted { color: var(--muted); font-size: 0.85rem; }
+.reason { border-left: 3px solid var(--border); padding: 6px 12px;
+          margin: 8px 0; color: #444; font-size: 0.9rem; }
+blockquote { border-left: 3px solid var(--border); padding: 6px 12px;
+             margin: 8px 0; color: #444; font-size: 0.9rem; }
+
+/* Checklist */
+.chk-label { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; }
+.chk-label input[type=checkbox] { margin-top: 3px; width: 15px; height: 15px;
+                                   flex-shrink: 0; accent-color: var(--green); }
+
+/* Gap rows */
+.gap-row { display: flex; gap: 16px; flex-wrap: wrap; margin: 4px 0; font-size: 0.88rem; }
+.gap-stat { font-size: 1.1rem; font-weight: 700; }
+.sep { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+pre { background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+      padding: 12px; font-size: 0.85rem; white-space: pre-wrap; overflow-x: auto; }
+
+@media (max-width: 600px) { body { padding: 10px; } th, td { padding: 5px 8px; } }
+</style>
+</head>
+<body>
+<h1>⚾ Fantasy Baseball Report <span class="muted">— 2026-04-16</span></h1>
+<h2>📊 현황 요약 <span class="muted">(12팀 리그)</span></h2>
+<p style="font-weight:700;margin:12px 0 4px">타자</p><div class="tbl-wrap"><table><thead><tr><th>구분</th><th>R</th><th>HR</th><th>RBI</th><th>SB</th><th>AVG</th><th>OPS</th></tr></thead><tbody><tr><td>순위</td><td class="safe">✅ 4위</td><td class="weak">🔴 9위</td><td class="safe">✅ 4위</td><td class="safe">✅ 3위</td><td class="safe">✅ 3위</td><td class="safe">✅ 3위</td></tr></tbody></table></div>
+<p style="font-weight:700;margin:12px 0 4px">투수</p><div class="tbl-wrap"><table><thead><tr><th>구분</th><th>IP</th><th>W</th><th>K</th><th>ERA</th><th>WHIP</th><th>SV+H</th></tr></thead><tbody><tr><td>순위</td><td class="weak">🔴 10위</td><td class="weak">🔴 11위</td><td class="weak">🔴 9위</td><td class="weak">🔴 8위</td><td class="weak">🔴 9위</td><td class="safe">✅ 5위</td></tr></tbody></table></div>
+<h3>🎯 보강 분석</h3>
+<div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>W</strong> <span class="tag tag-red">11위/12팀 ⚠</span><span class="gap-stat">7</span></div><div class="gap-row"><span>↑ 위 팀: <strong>Closer Club</strong> 8 <span class="tag tag-red">격차 1</span></span><span>↓ 아래 팀: <strong>Power Surge</strong> 7 <span class="tag tag-green">쿠션 0</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-red">탑3 페이스도 어려움 (필요 19게임)</span> <span class="tag tag-red">🔴 약점 — 보강 권장</span></div></div>
+<div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>IP</strong> <span class="tag tag-red">10위/12팀 ⚠</span><span class="gap-stat">175.0</span></div><div class="gap-row"><span>↑ 위 팀: <strong>SB Factory</strong> 180.2 <span class="tag tag-red">격차 5.2</span></span><span>↓ 아래 팀: <strong>Stealth Squad</strong> 172.0 <span class="tag tag-green">쿠션 3.0</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-red">탑3 페이스도 어려움 (필요 15게임)</span> <span class="tag tag-red">🔴 약점 — 보강 권장</span></div></div>
+<div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>HR</strong> <span class="tag tag-red">9위/12팀 ⚠</span><span class="gap-stat">29</span></div><div class="gap-row"><span>↑ 위 팀: <strong>Iron Mike</strong> 31 <span class="tag tag-red">격차 2</span></span><span>↓ 아래 팀: <strong>ERA Kings</strong> 28 <span class="tag tag-green">쿠션 1</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-red">탑3 페이스도 어려움 (필요 22게임)</span> <span class="tag tag-red">🔴 약점 — 보강 권장</span></div></div>
+<div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>K</strong> <span class="tag tag-red">9위/12팀 ⚠</span><span class="gap-stat">182</span></div><div class="gap-row"><span>↑ 위 팀: <strong>SB Factory</strong> 195 <span class="tag tag-red">격차 13</span></span><span>↓ 아래 팀: <strong>Stealth Squad</strong> 178 <span class="tag tag-green">쿠션 4</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-red">탑3 페이스도 어려움 (필요 29게임)</span> <span class="tag tag-red">🔴 약점 — 보강 권장</span></div></div>
+<div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>WHIP</strong> <span class="tag tag-red">9위/12팀 ⚠</span><span class="gap-stat">1.400</span></div><div class="gap-row"><span>↑ 위 팀: <strong>Stealth Squad</strong> 1.380 <span class="tag tag-red">격차 0.020</span></span><span>↓ 아래 팀: <strong>Dingers Only</strong> 1.450 <span class="tag tag-green">쿠션 0.050</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-red">🔴 약점 — 보강 권장</span></div></div>
+<div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>ERA</strong> <span class="tag tag-red">8위/12팀 ⚠</span><span class="gap-stat">4.22</span></div><div class="gap-row"><span>↑ 위 팀: <strong>SB Factory</strong> 4.15 <span class="tag tag-red">격차 0.07</span></span><span>↓ 아래 팀: <strong>Stealth Squad</strong> 4.40 <span class="tag tag-green">쿠션 0.18</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-red">🔴 약점 — 보강 권장</span></div></div>
+<h2>💡 드랍/애드 추천</h2>
+<div class="card card-drop"><h3>❌ DROP: Carlos Santana <span class="tag tag-gray">MIL · 1B, Util</span></h3>
+<blockquote>Carlos Santana는 최근 7일 타율 .145, OPS .520으로 극도로 부진합니다. 30일 평균 타율 .178에서도 반등 없이 계속 하락 중이며, 팀의 약점인 W/IP/ERA 카테고리에 기여하지 못하는 타자입니다.</blockquote>
+<p style="font-weight:700;margin-top:12px">영입 후보</p>
+<div class="card card-add" style="margin:8px 0"><label class="chk-label"><input type="checkbox"> <div><strong>ADD Eugenio Suárez</strong> <span class="tag tag-blue">🔥 HOT</span> <span class="tag tag-gray">ARI · 3B, Util</span> <span class="tag tag-blue">보유율 32%</span> <span class="tag tag-gray">Healthy</span><blockquote style="margin-top:6px">Eugenio Suárez는 최근 7일 타율 .290, OPS .940으로 Santana와 대비되는 상승세를 보입니다. 7일 HR 2개, RBI 6개로 팀의 약한 HR·RBI 카테고리에 즉각 기여 가능합니다.</blockquote></div></label></div>
+</div><hr class="sep">
+<h2>🔄 IL 슬롯 교체 후보</h2>
+<p class="muted" style="margin-bottom:10px">웨이버에 더 나은 IL 선수가 있습니다.</p>
+<div class="card card-il"><label class="chk-label"><input type="checkbox"> <div><strong>ADD Dylan Cease</strong> <span class="tag tag-gray">SD · SP</span> <span class="tag tag-yellow">IL-15</span><div class="muted" style="margin:4px 0">↕ DROP <strong>Bobby Miller</strong> <span class="tag tag-gray">LAD</span> <span class="tag tag-red">IL-60</span></div><blockquote style="margin-top:6px">Dylan Cease는 2주 이내 복귀 예정이며 시즌 예측 ERA 3.45, K 220으로 Bobby Miller보다 월등히 높은 가치입니다.</blockquote></div></label></div>
+<hr class="sep">
+<h2>✍️ 적용 기록</h2><p class="muted" style="margin-bottom:8px">위 체크박스를 체크한 뒤 아래 명령으로 피드백을 저장하세요:</p><pre>python -m src.feedback.import_md reports/$(date +%Y-%m-%d).md</pre>
+</body>
+</html>
