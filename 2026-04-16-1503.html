@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚾ Fantasy Report — 2026-04-16</title>
+<style>
+:root {
+  --bg: #f6f8fa; --card: #fff; --border: #d0d7de;
+  --text: #1f2328; --muted: #656d76;
+  --red: #cf222e; --yellow: #9a6700; --green: #1a7f37; --blue: #0969da;
+  --red-bg: #fff0f0; --yellow-bg: #fff8c5; --green-bg: #dafbe1; --blue-bg: #ddf4ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  padding: 16px; max-width: 860px; margin: 0 auto;
+}
+h1 { font-size: 1.4rem; margin: 12px 0 20px; }
+h2 { font-size: 1.1rem; font-weight: 700; margin: 28px 0 12px;
+     padding-bottom: 6px; border-bottom: 2px solid var(--border); }
+h3 { font-size: 1rem; font-weight: 700; margin: 16px 0 8px; }
+
+/* Tables */
+.tbl-wrap { overflow-x: auto; margin-bottom: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+th, td { padding: 7px 12px; text-align: center;
+         border: 1px solid var(--border); white-space: nowrap; }
+thead th { background: var(--bg); font-weight: 600; }
+tbody tr:hover td { background: #f0f4f8; }
+
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border);
+        border-radius: 8px; padding: 14px 16px; margin: 10px 0; }
+.card-drop { border-left: 4px solid var(--red); }
+.card-add  { border-left: 4px solid var(--green); background: var(--green-bg); }
+.card-il   { border-left: 4px solid var(--yellow); background: var(--yellow-bg); }
+.card-gap  { border-left: 4px solid var(--border); }
+.card-gap.is-weak   { border-color: var(--red); }
+.card-gap.is-border { border-color: var(--yellow); }
+
+/* Tags / badges */
+.tag { display: inline-block; padding: 1px 8px; border-radius: 10px;
+       font-size: 0.78rem; font-weight: 600; margin: 0 2px; }
+.tag-red    { background: var(--red-bg); color: var(--red); }
+.tag-green  { background: var(--green-bg); color: var(--green); }
+.tag-yellow { background: var(--yellow-bg); color: var(--yellow); }
+.tag-blue   { background: var(--blue-bg); color: var(--blue); }
+.tag-gray   { background: var(--bg); color: var(--muted); }
+
+/* Typography helpers */
+.muted { color: var(--muted); font-size: 0.85rem; }
+.reason { border-left: 3px solid var(--border); padding: 6px 12px;
+          margin: 8px 0; color: #444; font-size: 0.9rem; }
+blockquote { border-left: 3px solid var(--border); padding: 6px 12px;
+             margin: 8px 0; color: #444; font-size: 0.9rem; }
+
+/* Checklist */
+.chk-label { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; }
+.chk-label input[type=checkbox] { margin-top: 3px; width: 15px; height: 15px;
+                                   flex-shrink: 0; accent-color: var(--green); }
+
+/* Gap rows */
+.gap-row { display: flex; gap: 16px; flex-wrap: wrap; margin: 4px 0; font-size: 0.88rem; }
+.gap-stat { font-size: 1.1rem; font-weight: 700; }
+.sep { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+pre { background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+      padding: 12px; font-size: 0.85rem; white-space: pre-wrap; overflow-x: auto; }
+details { margin: 12px 0; }
+details summary { cursor: pointer; font-weight: 600; color: var(--blue);
+                  padding: 6px 0; user-select: none; }
+details summary:hover { text-decoration: underline; }
+
+@media (max-width: 600px) { body { padding: 10px; } th, td { padding: 5px 8px; } }
+</style>
+</head>
+<body>
+<h1>⚾ Fantasy Baseball Report <span class="muted">— 2026-04-16</span></h1>
+<h2>📊 현황 요약 <span class="muted">(12팀 리그)</span></h2>
+<p style="font-weight:700;margin:12px 0 4px">타자</p><div class="tbl-wrap"><table><thead><tr><th>구분</th><th>R</th><th>HR</th><th>RBI</th><th>SB</th><th>AVG</th><th>OPS</th></tr></thead><tbody><tr><td>순위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td></tr></tbody></table></div>
+<p style="font-weight:700;margin:12px 0 4px">투수</p><div class="tbl-wrap"><table><thead><tr><th>구분</th><th>IP</th><th>W</th><th>K</th><th>ERA</th><th>WHIP</th><th>SV+H</th></tr></thead><tbody><tr><td>순위</td><td class="weak">🔴 8위</td><td class="weak">🔴 11위</td><td class="weak">🔴 8위</td><td class="weak">🔴 9위</td><td class="weak">🔴 11위</td><td class="safe">✅ 6위</td></tr></tbody></table></div>
+<h3>🎯 보강 분석</h3>
+<div class="card" style="border-left:4px solid var(--blue);background:var(--blue-bg);margin-bottom:12px"><div style="font-weight:700;margin-bottom:8px">💡 전략 방향 힌트 <span class="muted" style="font-size:0.78rem;font-weight:400">(규칙 기반 보조 참고 — 실제 효과는 영입 선수 성적에 따라 달라질 수 있습니다)</span></div><div style="font-size:0.85rem"><div style="margin-bottom:6px"><span style="font-size:0.8rem;color:var(--muted)">카테고리 상태:</span> <span class="tag tag-yellow">ERA 비율 스탯 — 장기 관리</span> <span class="tag tag-green">IP 소격차 — 추격 가능</span> <span class="tag tag-green">K 소격차 — 추격 가능</span> <span class="tag tag-green">W 소격차 — 추격 가능</span></div><div><span style="font-size:0.8rem;color:var(--muted)">행동 방향:</span> <span class="tag tag-red">비율 보호 최우선</span> <span class="tag tag-blue">ERA/WHIP 좋은 투수 영입 경향</span> <span class="tag tag-yellow">SP 추가 시 W·K 기여 경향 (ERA/WHIP 리스크 관리 필요)</span></div></div></div>
+<div class="tbl-wrap"><table><thead><tr><th>카테고리</th><th>순위</th><th title="위 팀과의 격차 — 추월에 필요한 양">↑공격 비용</th><th title="아래 팀과의 여유 — 순위 방어 여유">↓방어 여유</th><th>난이도</th><th>회복 힌트</th></tr></thead><tbody><tr><td><strong>W</strong></td><td><span class="tag tag-red">11위/12</span></td><td>1</td><td><span class="tag tag-green">+2</span></td><td><span class='tag tag-green'>🟢 소격차 — 빠른 역전 가능</span></td><td class='muted' style='font-size:0.78rem;text-align:left'>—</td></tr>
+<tr><td><strong>WHIP</strong></td><td><span class="tag tag-red">11위/12</span></td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><strong>ERA</strong></td><td><span class="tag tag-red">9위/12</span></td><td>0.21</td><td><span class="tag tag-green">+0.14</span></td><td><span class='tag tag-yellow'>🟠 비율 스탯 — 장기전</span></td><td class='muted' style='font-size:0.78rem;text-align:left'>ERA 3.00으로 ~39이닝</td></tr>
+<tr><td><strong>IP</strong></td><td><span class="tag tag-red">8위/12</span></td><td>17.1</td><td><span class="tag tag-yellow">+6.9</span></td><td><span class='tag tag-green'>🟢 소격차 — 빠른 역전 가능</span></td><td class='muted' style='font-size:0.78rem;text-align:left'>—</td></tr>
+<tr><td><strong>K</strong></td><td><span class="tag tag-red">8위/12</span></td><td>1</td><td><span class="tag tag-green">+21</span></td><td><span class='tag tag-green'>🟢 소격차 — 빠른 역전 가능</span></td><td class='muted' style='font-size:0.78rem;text-align:left'>—</td></tr>
+<tr><td><strong>SV+H</strong></td><td><span class="tag tag-yellow">6위/12</span></td><td>1</td><td><span class="tag tag-yellow">동률</span></td><td><span class='tag tag-green'>🟢 소격차 — 빠른 역전 가능</span></td><td class='muted' style='font-size:0.78rem;text-align:left'>—</td></tr></tbody></table></div><p class="muted" style="margin:4px 0 12px;font-size:0.8rem">누적 스탯(R·HR·RBI·SB·W·K·IP·SV+H): 운이 좋으면 하루에도 여러 개 추가 가능 &nbsp;|&nbsp; 비율 스탯(AVG·OPS·ERA·WHIP): 장기간 경기 누적이 필요</p>
+<details><summary>📋 카테고리별 상세 보기</summary><div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>W</strong> <span class="tag tag-red">11위/12팀 ⚠</span><span class="gap-stat">7</span></div><div class="gap-row"><span>↑ 위 팀: <strong>🐶 Diamond Dogs Yongwoo</strong> 8 <span class="tag tag-red">↑격차 1</span> <span class="tag tag-green" title="아래 순위로 밀리기 전까지의 여유">↓하위 여유 2</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-yellow">🟡 소격차 — 경기력에 달림</span></div></div>
+<div class="card card-gap is-weak"><strong>WHIP</strong> (11위/12팀) — 스탯 데이터 없음</div>
+<div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>ERA</strong> <span class="tag tag-red">9위/12팀 ⚠</span><span class="gap-stat">4.16</span></div><div class="gap-row"><span>↑ 위 팀: <strong>🚀 용진's Rockets</strong> 3.95 <span class="tag tag-red">↑격차 0.21</span> <span class="tag tag-green" title="아래 순위로 밀리기 전까지의 여유">↓하위 여유 0.14</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-red">🔴 약점 — 보강 권장</span></div><div style="margin-top:6px;padding:6px 10px;background:var(--bg);border-radius:4px;font-size:0.82rem">📐 현재 ERA 4.16 → 목표 3.95 (격차 0.21)<br><span class="muted">ERA 3.00으로 ~39이닝 | ERA 2.50으로 ~25이닝</span></div></div>
+<div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>IP</strong> <span class="tag tag-red">8위/12팀 ⚠</span><span class="gap-stat">175.1</span></div><div class="gap-row"><span>↑ 위 팀: <strong>goldworm</strong> 192.2 <span class="tag tag-red">↑격차 17.1</span> <span class="tag tag-green" title="아래 순위로 밀리기 전까지의 여유">↓하위 여유 6.9</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-yellow">🟡 소격차 — 경기력에 달림</span></div></div>
+<div class="card card-gap is-weak"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>K</strong> <span class="tag tag-red">8위/12팀 ⚠</span><span class="gap-stat">179</span></div><div class="gap-row"><span>↑ 위 팀: <strong>🏆 Big League byungdong</strong> 180 <span class="tag tag-red">↑격차 1</span> <span class="tag tag-green" title="아래 순위로 밀리기 전까지의 여유">↓하위 여유 21</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-yellow">🟡 소격차 — 경기력에 달림</span></div></div>
+<div class="card card-gap is-border"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><strong>SV+H</strong> <span class="tag tag-yellow">6위/12팀</span><span class="gap-stat">11</span></div><div class="gap-row"><span>↑ 위 팀: <strong>eXtreme</strong> 12 <span class="tag tag-red">↑격차 1</span></span></div><div style="margin-top:6px"><span class="tag tag-gray">? 추세 데이터 없음</span> <span class="tag tag-yellow">🟡 경계선 — 현재 안전</span></div></div></details>
+<h2>💡 드랍/애드 추천</h2>
+<div class="card card-drop"><h3>❌ DROP: Trevor Megill <span class="tag tag-gray">MIL · RP</span></h3>
+<blockquote>Trevor Megill은 현재 건강 상태는 양호하지만, 최근 투구량이 극히 제한적이어서 판타지 가치가 매우 낮습니다. 7일 동안 1.0이닝만 기록했으며, 14일 기준으로도 3.0이닝에 불과해 IP 보강이 필요한 팀 전략과 맞지 않습니다. 더욱 우려스러운 점은 최근 7일 ERA 63.0, WHIP 6.0이라는 극악의 성적을 기록했으며, 14일 기준으로도 ERA 21.0으로 개선되지 않고 있어 팀이 필요로 하는 ERA와 WHIP 개선에 전혀 도움이 되지 않습니다. 시즌 예측 스탯도 IP 0.4이닝으로 주요 카테고리 어디에도 의미 있는 기여를 할 수 없으므로, 현재 로스터 공간을 더 생산적인 선수에게 할애하는 것이 현명한 판단입니다.</blockquote>
+<p style="font-weight:700;margin-top:12px">영입 후보</p>
+<div class="card card-add" style="margin:8px 0"><label class="chk-label"><input type="checkbox"> <div><strong>ADD Aaron Ashby</strong> <span class="tag tag-yellow">🟡조건부</span> <span class="tag tag-gray">MIL · RP</span> <span class="tag tag-blue">보유율 14%</span> <span class="tag tag-gray">Healthy</span><div style="margin:4px 0;font-size:0.8rem">약점 카테고리 기여: <span class="tag tag-green">ERA 3.29</span><span class="tag tag-green">IP 13.2</span><span class="tag tag-green">K 22</span><span class="tag tag-green">W 4</span><span class="tag tag-red">WHIP 1.320</span> <span class="tag tag-gray" title="일반적 경향 — 실제 효과는 투수 성적에 따라 달라짐">RP: SV+H·K 보강 경향, W·IP는 소폭, ERA/WHIP는 투수 질에 따라 변동</span></div><div style="margin:6px 0 2px;display:flex;flex-direction:column;gap:3px;background:#f6f8fa;border-radius:6px;padding:6px 8px;font-size:0.82rem"><div style="display:flex;gap:8px;align-items:baseline"><span style="color:var(--muted);font-size:0.75rem;white-space:nowrap;min-width:52px">역할/기회</span><span><span class="tag tag-gray" style="font-size:0.75rem">기회 낮음</span></span></div></div><blockquote style="margin-top:6px">Aaron Ashby 영입은 조건부로 검토할 가치가 있으나 실행 전 상황을 면밀히 살펴봐야 합니다. 30일 기준으로 Ashby는 13.2 IP에서 4승, 22탈삼을 기록하며 ERA 3.29, WHIP 1.32를 유지하고 있는 반면, Megill은 5.0 IP에서 무승리에 ERA 14.4, WHIP 2.40으로 심각한 부진 중입니다. 당신의 팀이 필요로 하는 IP, W, K, ERA, WHIP 모든 카테고리에서 Ashby가 더 안정적인 기여를 할 수 있으며, 특히 승수와 탈삼에서의 격차가 주목됩니다. 다만 Ashby의 낮은 기회 수준(14% 보유율)은 밀워키의 제한된 선발 기회나 예상치 못한 역할 변화 가능성을 시사하므로, 이러한 불확실성을 감수할 준비가 필요합니다.</blockquote></div></label></div>
+<div class="card card-add" style="margin:8px 0"><label class="chk-label"><input type="checkbox"> <div><strong>ADD Rico Garcia</strong> <span class="tag tag-green">🟢즉시</span> <span class="tag tag-gray">BAL · RP</span> <span class="tag tag-blue">보유율 9%</span> <span class="tag tag-gray">Healthy</span><div style="margin:4px 0;font-size:0.8rem">약점 카테고리 기여: <span class="tag tag-green">ERA 0.00</span><span class="tag tag-green">IP 9.0</span><span class="tag tag-green">K 10</span><span class="tag tag-green">W 1</span><span class="tag tag-green">WHIP 0.330</span> <span class="tag tag-gray" title="일반적 경향 — 실제 효과는 투수 성적에 따라 달라짐">RP: SV+H·K 보강 경향, W·IP는 소폭, ERA/WHIP는 투수 질에 따라 변동</span></div><div style="margin:6px 0 2px;display:flex;flex-direction:column;gap:3px;background:#f6f8fa;border-radius:6px;padding:6px 8px;font-size:0.82rem"><div style="display:flex;gap:8px;align-items:baseline"><span style="color:var(--muted);font-size:0.75rem;white-space:nowrap;min-width:52px">최근 7일</span><span><span style="font-size:0.8rem;font-variant-numeric:tabular-nums">IP=3.1</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">ERA=0.00</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">WHIP=0.000</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">K=3</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">SV+H=2</span></span></div><div style="display:flex;gap:8px;align-items:baseline"><span style="color:var(--muted);font-size:0.75rem;white-space:nowrap;min-width:52px">ROS 예측</span><span><span style="font-size:0.8rem;font-variant-numeric:tabular-nums">IP=9.0</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">ERA=0.00</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">WHIP=0.330</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">K=10</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">SV+H=5</span></span></div><div style="display:flex;gap:8px;align-items:baseline"><span style="color:var(--muted);font-size:0.75rem;white-space:nowrap;min-width:52px">역할/기회</span><span><span class="tag tag-gray" style="font-size:0.75rem">셋업/마무리급</span><span class="tag tag-green" style="font-size:0.75rem">기회 높음</span></span></div></div><blockquote style="margin-top:6px">Rico Garcia를 웨이버에서 영입하는 것이 높은 확신 수준에서 권장됩니다. 30일 기준으로 Garcia는 ERA 0.0, WHIP 0.33의 탁월한 투구를 보여주고 있으며, 이는 Megill의 ERA 14.4, WHIP 2.4와 현저한 차이를 나타냅니다. 또한 Garcia의 IP 9.0, K 10.0은 팀의 보강 필요 카테고리인 투구 이닝, 탈삼진, 방어율을 동시에 강화할 수 있으며, 셋업/마무리급 역할과 높은 기회 수준까지 고려하면 Megill(IP 5.0, K 5.0, SV+H 3.0)의 저조한 성과 대비 명백한 업그레이드입니다. 다만 Garcia의 30일 샘플 크기가 제한적이고 부상으로 인한 기회 축소 가능성이 있으므로 지속적인 모니터링이 필요합니다.</blockquote></div></label></div>
+<div class="card card-add" style="margin:8px 0"><label class="chk-label"><input type="checkbox"> <div><strong>ADD Justin Wrobleski</strong> <span class="tag tag-green">🟢즉시</span> <span class="tag tag-gray">LAD · RP</span> <span class="tag tag-blue">보유율 10%</span> <span class="tag tag-gray">Healthy</span><div style="margin:4px 0;font-size:0.8rem">약점 카테고리 기여: <span class="tag tag-green">ERA 2.12</span><span class="tag tag-green">IP 17.0</span><span class="tag tag-green">K 6</span><span class="tag tag-green">W 2</span><span class="tag tag-green">WHIP 0.760</span> <span class="tag tag-gray" title="일반적 경향 — 실제 효과는 투수 성적에 따라 달라짐">RP: SV+H·K 보강 경향, W·IP는 소폭, ERA/WHIP는 투수 질에 따라 변동</span></div><div style="margin:6px 0 2px;display:flex;flex-direction:column;gap:3px;background:#f6f8fa;border-radius:6px;padding:6px 8px;font-size:0.82rem"><div style="display:flex;gap:8px;align-items:baseline"><span style="color:var(--muted);font-size:0.75rem;white-space:nowrap;min-width:52px">최근 7일</span><span><span style="font-size:0.8rem;font-variant-numeric:tabular-nums">IP=8.0</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">ERA=0.00</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">WHIP=0.250</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">K=2</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">SV+H=0</span></span></div><div style="display:flex;gap:8px;align-items:baseline"><span style="color:var(--muted);font-size:0.75rem;white-space:nowrap;min-width:52px">역할/기회</span><span><span class="tag tag-yellow" style="font-size:0.75rem">기회 보통</span></span></div></div><blockquote style="margin-top:6px">Justin Wrobleski를 영입하고 Trevor Megill을 드랍하는 것이 높은 확신으로 권장됩니다. Wrobleski는 최근 30일 기준 IP 17.0, ERA 2.12, WHIP 0.76의 안정적인 성적을 보이고 있으며, 이는 Megill의 IP 5.0, ERA 14.4, WHIP 2.4와 비교할 때 IP에서 3배 이상, ERA에서 약 6배 우수합니다. 특히 팀의 IP, W, K, ERA, WHIP 보강이 필요한 상황에서 Wrobleski는 모든 카테고리에서 유의미한 기여가 가능하며, 10% 보유율로 웨이버에서 충분히 획득 가능한 기회가 있습니다. 다만 Wrobleski의 기회 수준이 보통이므로, 향후 로스터 변동에 따른 역할 축소 가능성을 주시할 필요가 있습니다.</blockquote></div></label></div>
+</div><hr class="sep">
+<div class="card card-drop"><h3>❌ DROP: Corbin Carroll <span class="tag tag-gray">AZ · OF</span></h3>
+<blockquote>Corbin Carroll을 드랍하는 것이 현명한 이유는 현재 벤치(BN) 슬롯에서 활용도가 제한적이기 때문입니다. 최근 7일간 0.263 타율에 홈런, 타점, 도루가 모두 0으로 심각한 부진 중이며, 비록 14일과 30일 기간에는 타율 0.3, 0.311과 OPS 0.916, 1.001로 회복세를 보였으나 현재는 명확한 침체기에 있습니다. 더 중요한 것은 우리 팀의 보강 필요 카테고리가 투수 스탯(IP, W, K, ERA, WHIP)에 집중되어 있다는 점에서, 타자 슬롯에 투자하는 것이 팀 전력 강화에 효율적이지 못합니다. 벤치 슬롯의 제한된 공간을 고려할 때 즉각적인 기여가 어려운 Carroll보다는 현재 팀의 우선순위와 맞는 선수 영입에 로스터 자리를 할애하는 것이 판타지 경쟁력 향상에 도움이 될 것입니다.</blockquote>
+<p style="font-weight:700;margin-top:12px">영입 후보</p>
+<div class="card card-add" style="margin:8px 0"><label class="chk-label"><input type="checkbox"> <div><strong>ADD Luke Raley</strong> <span class="tag tag-green">🟢즉시</span> <span class="tag tag-gray">SEA · OF</span> <span class="tag tag-blue">보유율 10%</span> <span class="tag tag-gray">Healthy</span><div style="margin:6px 0 2px;display:flex;flex-direction:column;gap:3px;background:#f6f8fa;border-radius:6px;padding:6px 8px;font-size:0.82rem"><div style="display:flex;gap:8px;align-items:baseline"><span style="color:var(--muted);font-size:0.75rem;white-space:nowrap;min-width:52px">최근 7일</span><span><span style="font-size:0.8rem;font-variant-numeric:tabular-nums">R=4</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">HR=1</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">RBI=6</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">SB=0</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">AVG=0.480</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">OPS=1.319</span></span></div></div><blockquote style="margin-top:6px">Luke Raley를 웨이버에서 영입하고 Corbin Carroll을 드랍하는 것을 높은 확신으로 권장합니다. Raley는 최근 30일간 타율 .339, OPS 1.035로 Carroll의 .311, OPS 1.001을 능가하며, 특히 RBI 12회와 HR 4개로 당신의 팀이 필요로 하는 공격력을 제공할 수 있습니다. 하지만 현재 상황에서는 타자 카테고리 강화에만 집중되며, 당신의 우선순위인 IP, W, K, ERA, WHIP 등 투수 카테고리 보강에는 직접적인 도움이 되지 않는다는 점을 고려해야 합니다. Carroll의 시즌 예측 스탯이 모두 0으로 표시된 만큼 부상이나 로스터 변동 같은 변수가 존재할 수 있으므로, 드랍 전에 최신 뉴스를 확인할 것을 권장합니다.</blockquote></div></label></div>
+<div class="card card-add" style="margin:8px 0"><label class="chk-label"><input type="checkbox"> <div><strong>ADD Owen Caissie</strong> <span class="tag tag-green">🟢즉시</span> <span class="tag tag-gray">MIA · OF</span> <span class="tag tag-blue">보유율 23%</span> <span class="tag tag-gray">Healthy</span><blockquote style="margin-top:6px">Owen Caissie를 영입하고 Corbin Carroll을 드랍하는 거래는 높은 확신 수준에서 진행할 가치가 있습니다. 현재 팀의 투수 카테고리(IP, W, K, ERA, WHIP) 보강이 시급한 상황에서 Caissie의 웨이버 영입은 타자 로테이션을 다양화하면서 회전율이 낮은 선수를 교체하는 전략입니다. 반면 Carroll은 최근 30일 기준 AVG 0.311, OPS 1.001로 안정적인 성적을 유지했으나, 시즌 예측 스탯이 모두 0으로 표시되어 향후 출장 제한이나 역할 축소 가능성을 시사하고 있습니다. 다만 Carroll의 극도로 낮아진 예측 스탯의 정확한 원인(부상, 포지션 조정, 로테이션 감소 등)을 확인하지 않은 상태에서 결정하면 장기적으로 후회할 수 있다는 점을 고려해야 합니다.</blockquote></div></label></div>
+<div class="card card-add" style="margin:8px 0"><label class="chk-label"><input type="checkbox"> <div><strong>ADD Brandon Marsh</strong> <span class="tag tag-green">🟢즉시</span> <span class="tag tag-gray">PHI · OF</span> <span class="tag tag-blue">보유율 10%</span> <span class="tag tag-gray">Healthy</span><div style="margin:6px 0 2px;display:flex;flex-direction:column;gap:3px;background:#f6f8fa;border-radius:6px;padding:6px 8px;font-size:0.82rem"><div style="display:flex;gap:8px;align-items:baseline"><span style="color:var(--muted);font-size:0.75rem;white-space:nowrap;min-width:52px">최근 7일</span><span><span style="font-size:0.8rem;font-variant-numeric:tabular-nums">R=4</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">HR=1</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">RBI=5</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">SB=1</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">AVG=0.318</span>  <span style="font-size:0.8rem;font-variant-numeric:tabular-nums">OPS=0.848</span></span></div></div><blockquote style="margin-top:6px">Brandon Marsh의 영입은 높은 확신을 가지고 권장됩니다. 최근 30일 기준으로 Marsh는 평균 0.290, OPS 0.770의 안정적인 타격을 보여주며, 특히 7일 데이터에서 0.318의 뛰어난 평균과 1.0의 홈런, 5.0의 타점을 기록했으나, Carroll은 최근 7일간 0.263 평균에 0.0 홈런, 0.0 타점으로 침체 중입니다. 다만 현재 팀의 보강 필요 카테고리가 IP, W, K, ERA, WHIP 등 투수 지표에 집중되어 있는 상황에서, 외야수 영입이 타격 카테고리 강화에는 도움이 되겠으나 투수 카테고리 보강에는 직접적인 기여가 제한적이라는 점을 고려해야 합니다. Carroll의 시즌 예측 스탯이 전무한 상태로 표시된 것은 부상이나 역할 축소 가능성을 시사하므로, 이러한 불확실성 요소를 충분히 검토하고 거래를 진행해야 합니다.</blockquote></div></label></div>
+</div><hr class="sep">
+
+<h2>✍️ 적용 기록</h2><p class="muted" style="margin-bottom:8px">위 체크박스를 체크한 뒤 아래 명령으로 피드백을 저장하세요:</p><pre>python -m src.feedback.import_md reports/$(date +%Y-%m-%d).md</pre>
+</body>
+</html>
