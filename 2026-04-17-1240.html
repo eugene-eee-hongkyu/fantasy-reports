@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚾ Fantasy Report — 2026-04-17</title>
+<style>
+:root {
+  --bg: #f6f8fa; --card: #fff; --border: #d0d7de;
+  --text: #1f2328; --muted: #656d76;
+  --red: #cf222e; --yellow: #9a6700; --green: #1a7f37; --blue: #0969da;
+  --red-bg: #fff0f0; --yellow-bg: #fff8c5; --green-bg: #dafbe1; --blue-bg: #ddf4ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  padding: 16px; max-width: 860px; margin: 0 auto;
+}
+h1 { font-size: 1.4rem; margin: 12px 0 20px; }
+h2 { font-size: 1.1rem; font-weight: 700; margin: 28px 0 12px;
+     padding-bottom: 6px; border-bottom: 2px solid var(--border); }
+h3 { font-size: 1rem; font-weight: 700; margin: 16px 0 8px; }
+
+/* Tables */
+.tbl-wrap { overflow-x: auto; margin-bottom: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+th, td { padding: 7px 12px; text-align: center;
+         border: 1px solid var(--border); white-space: nowrap; }
+thead th { background: var(--bg); font-weight: 600; }
+tbody tr:hover td { background: #f0f4f8; }
+
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border);
+        border-radius: 8px; padding: 14px 16px; margin: 10px 0; }
+.card-drop { border-left: 4px solid var(--red); }
+.card-add  { border-left: 4px solid var(--green); background: var(--green-bg); }
+.card-il   { border-left: 4px solid var(--yellow); background: var(--yellow-bg); }
+.card-gap  { border-left: 4px solid var(--border); }
+.card-gap.is-weak   { border-color: var(--red); }
+.card-gap.is-border { border-color: var(--yellow); }
+.card-watch       { border-left: 4px solid #9a6700; background: var(--yellow-bg); }
+.card-escalated   { border-left: 4px solid #bc4c00; background: #fff3eb; }
+.card-drop-ready  { border-left: 4px solid var(--red); background: var(--red-bg); }
+
+/* Tags / badges */
+.tag { display: inline-block; padding: 1px 8px; border-radius: 10px;
+       font-size: 0.78rem; font-weight: 600; margin: 0 2px; }
+.tag-red    { background: var(--red-bg); color: var(--red); }
+.tag-green  { background: var(--green-bg); color: var(--green); }
+.tag-yellow { background: var(--yellow-bg); color: var(--yellow); }
+.tag-blue   { background: var(--blue-bg); color: var(--blue); }
+.tag-gray   { background: var(--bg); color: var(--muted); }
+
+/* Typography helpers */
+.muted { color: var(--muted); font-size: 0.85rem; }
+.reason { border-left: 3px solid var(--border); padding: 6px 12px;
+          margin: 8px 0; color: #444; font-size: 0.9rem; }
+blockquote { border-left: 3px solid var(--border); padding: 6px 12px;
+             margin: 8px 0; color: #444; font-size: 0.9rem; }
+
+/* Checklist */
+.chk-label { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; }
+.chk-label input[type=checkbox] { margin-top: 3px; width: 15px; height: 15px;
+                                   flex-shrink: 0; accent-color: var(--green); }
+
+/* Gap rows */
+.gap-row { display: flex; gap: 16px; flex-wrap: wrap; margin: 4px 0; font-size: 0.88rem; }
+.gap-stat { font-size: 1.1rem; font-weight: 700; }
+.sep { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+pre { background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+      padding: 12px; font-size: 0.85rem; white-space: pre-wrap; overflow-x: auto; }
+details { margin: 12px 0; }
+details summary { cursor: pointer; font-weight: 600; color: var(--blue);
+                  padding: 6px 0; user-select: none; }
+details summary:hover { text-decoration: underline; }
+
+@media (max-width: 600px) { body { padding: 10px; } th, td { padding: 5px 8px; } }
+</style>
+</head>
+<body>
+<h1>⚾ Fantasy Baseball Report <span class="muted">— 2026-04-17</span></h1>
+<h2>📊 현황 요약 <span class="muted">(12팀 리그)</span></h2>
+<p style="font-weight:700;margin:12px 0 4px">타자</p><div class="tbl-wrap"><table><thead><tr><th>구분</th><th>R</th><th>HR</th><th>RBI</th><th>SB</th><th>AVG</th><th>OPS</th></tr></thead><tbody><tr><td>순위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td><td class="safe">✅ 1위</td></tr><tr><td>보강 가중치</td><td><span class="tag tag-yellow" title="공격=low 방어=high">🟡 ×2.0 <span class="muted" style="font-size:0.72rem">(L/H)</span></span></td><td><span class="tag tag-yellow" title="공격=low 방어=high">🟡 ×2.0 <span class="muted" style="font-size:0.72rem">(L/H)</span></span></td><td><span class="tag tag-blue" title="공격=low 방어=med">🔵 ×1.5 <span class="muted" style="font-size:0.72rem">(L/M)</span></span></td><td><span class="tag tag-gray" title="공격=low 방어=low">⚪ ×1.0 <span class="muted" style="font-size:0.72rem">(L/L)</span></span></td><td><span class="tag tag-yellow" title="공격=low 방어=high">🟡 ×2.0 <span class="muted" style="font-size:0.72rem">(L/H)</span></span></td><td><span class="tag tag-gray" title="공격=low 방어=low">⚪ ×1.0 <span class="muted" style="font-size:0.72rem">(L/L)</span></span></td></tr></tbody></table></div>
+<p style="font-weight:700;margin:12px 0 4px">투수</p><div class="tbl-wrap"><table><thead><tr><th>구분</th><th>IP</th><th>W</th><th>K</th><th>ERA</th><th>WHIP</th><th>SV+H</th></tr></thead><tbody><tr><td>순위</td><td class="weak">🔴 8위</td><td class="weak">🔴 10위</td><td class="safe">✅ 6위</td><td class="weak">🔴 8위</td><td class="weak">🔴 11위</td><td class="safe">✅ 4위</td></tr><tr><td>보강 가중치</td><td><span class="tag tag-red" title="공격=high 방어=high">🔴 ×2.5 <span class="muted" style="font-size:0.72rem">(H/H)</span></span></td><td><span class="tag tag-red" title="공격=high 방어=high">🔴 ×2.5 <span class="muted" style="font-size:0.72rem">(H/H)</span></span></td><td><span class="tag tag-yellow" title="공격=med 방어=high">🟡 ×2.0 <span class="muted" style="font-size:0.72rem">(M/H)</span></span></td><td><span class="tag tag-red" title="공격=high 방어=high">🔴 ×2.5 <span class="muted" style="font-size:0.72rem">(H/H)</span></span></td><td><span class="tag tag-red" title="공격=high 방어=high">🔴 ×2.5 <span class="muted" style="font-size:0.72rem">(H/H)</span></span></td><td><span class="tag tag-yellow" title="공격=med 방어=high">🟡 ×2.0 <span class="muted" style="font-size:0.72rem">(M/H)</span></span></td></tr></tbody></table></div>
+
+<h2>🏟️ 오늘의 라인업 포인트 <span class="tag tag-yellow">⚡ 라인업 조정 권장</span></h2>
+<p class="muted" style="margin-bottom:12px">최근 폼(OPS 55%) + 기본기(30%) + 카운팅(15%) + 매치업(20%, 투수 손잡이·구장) 기반 출전 순위.</p>
+<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:10px"><strong>OF 경쟁</strong><span class="muted">5명 · OF×3 + Util×1 = 4슬롯</span><span class="tag tag-yellow">⚡ 변경 권장</span></div><div class="tbl-wrap"><table><thead><tr><th style="text-align:left">선수</th><th title="최근 OPS (7일 40%+14일 35%+30일 25%)">폼 OPS</th><th title="시즌 예측 + 현재 시즌 OPS">기본기</th><th>종합 점수</th><th>현재 슬롯</th><th>권장</th></tr></thead><tbody><tr><td style="text-align:left"><strong>1</strong> James Wood<br><span class="muted" style="font-size:0.78rem">OF</span></td><td>1.085</td><td>0.863</td><td><strong>0.910</strong></td><td><span class="tag tag-green">OF</span></td><td><span class="tag tag-green">✅ 출전 유지</span></td></tr>
+<tr><td style="text-align:left"><strong>2</strong> Bryan Reynolds<br><span class="muted" style="font-size:0.78rem">OF</span></td><td>1.004</td><td>0.874</td><td><strong>0.879</strong></td><td><span class="tag tag-green">OF</span></td><td><span class="tag tag-green">✅ 출전 유지</span></td></tr>
+<tr><td style="text-align:left"><strong>3</strong> Jackson Merrill<br><span class="muted" style="font-size:0.78rem">OF</span></td><td>0.918</td><td>0.838</td><td><strong>0.846</strong></td><td><span class="tag tag-green">OF</span></td><td><span class="tag tag-green">✅ 출전 유지</span></td></tr>
+<tr style="background:#fffbe6"><td style="text-align:left"><strong>4</strong> Corbin Carroll<br><span class="muted" style="font-size:0.78rem">OF</span></td><td>0.885</td><td>1.001</td><td><strong>0.790</strong></td><td><span class="tag tag-gray">BN</span></td><td><span class="tag tag-yellow">🟢 출전 권장</span></td></tr>
+<tr style="background:#fffbe6"><td style="text-align:left"><strong>5</strong> Wyatt Langford<br><span class="muted" style="font-size:0.78rem">OF</span></td><td>0.767</td><td>0.757</td><td><strong>0.695</strong></td><td><span class="tag tag-green">Util</span></td><td><span class="tag tag-red">🔴 BN 권장</span></td></tr></tbody></table></div></div>
+<h2>🏏 타자 Core 분석</h2>
+<details open><summary><span class="tag tag-green">Core</span> Core (6명)</summary><div class="tbl-wrap"><table><thead><tr><th style="text-align:left">선수</th><th>슬롯</th><th title="Core Score (0-100)">점수</th><th title="ROS OPS 백분위">ROS</th><th title="재영입 위험도">재영입</th><th title="7d 폼 추세">폼</th></tr></thead><tbody>
+<tr><td style="text-align:left">Ben Rice</td><td><span class="tag tag-gray">1B</span></td><td><strong>99</strong></td><td>1.00</td><td>0.98</td><td>1.00</td></tr>
+<tr><td style="text-align:left">William Contreras</td><td><span class="tag tag-gray">C</span></td><td><strong>87</strong></td><td>0.78</td><td>0.99</td><td>0.91</td></tr>
+<tr><td style="text-align:left">Corbin Carroll</td><td><span class="tag tag-gray">BN</span></td><td><strong>84</strong></td><td>0.89</td><td>0.99</td><td>0.50</td></tr>
+<tr><td style="text-align:left">James Wood</td><td><span class="tag tag-gray">OF</span></td><td><strong>83</strong></td><td>0.67</td><td>0.99</td><td>1.00</td></tr>
+<tr><td style="text-align:left">Jackson Merrill</td><td><span class="tag tag-gray">OF</span></td><td><strong>77</strong></td><td>0.56</td><td>0.98</td><td>1.00</td></tr>
+<tr><td style="text-align:left">José Ramírez</td><td><span class="tag tag-gray">3B</span></td><td><strong>72</strong></td><td>0.44</td><td>0.99</td><td>1.00</td></tr>
+</tbody></table></div></details>
+<details open><summary><span class="tag tag-yellow">Conditional</span> Conditional (3명)</summary><div class="tbl-wrap"><table><thead><tr><th style="text-align:left">선수</th><th>슬롯</th><th title="Core Score (0-100)">점수</th><th title="ROS OPS 백분위">ROS</th><th title="재영입 위험도">재영입</th><th title="7d 폼 추세">폼</th></tr></thead><tbody>
+<tr><td style="text-align:left">Bryan Reynolds</td><td><span class="tag tag-gray">OF</span></td><td><strong>62</strong></td><td>0.33</td><td>0.86</td><td>1.00</td></tr>
+<tr><td style="text-align:left">Wyatt Langford</td><td><span class="tag tag-gray">Util</span></td><td><strong>59</strong></td><td>0.22</td><td>0.93</td><td>1.00</td></tr>
+<tr><td style="text-align:left">CJ Abrams</td><td><span class="tag tag-gray">SS</span></td><td><strong>55</strong></td><td>0.11</td><td>0.97</td><td>1.00</td></tr>
+</tbody></table></div></details>
+<details open><summary><span class="tag tag-gray">Fringe</span> Fringe (1명)</summary><div class="tbl-wrap"><table><thead><tr><th style="text-align:left">선수</th><th>슬롯</th><th title="Core Score (0-100)">점수</th><th title="ROS OPS 백분위">ROS</th><th title="재영입 위험도">재영입</th><th title="7d 폼 추세">폼</th></tr></thead><tbody>
+<tr><td style="text-align:left">Nico Hoerner</td><td><span class="tag tag-gray">2B</span></td><td><strong>39</strong></td><td>0.00</td><td>0.97</td><td>0.50</td></tr>
+</tbody></table></div></details>
+<h2>⚡ SP 스트리밍</h2>
+<div class="card" style="margin-bottom:12px"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:8px"><strong>IP 예산 (2000이닝 한도)</strong><span style="color:var(--green);font-weight:700">잔여 1084 IP</span></div><div style="background:#e8edf0;border-radius:6px;overflow:hidden;height:18px;display:flex"><div style="background:var(--red);width:9.5%;transition:width 0.3s" title="사용됨 189IP"></div><div style="background:var(--blue);width:36.3%;transition:width 0.3s" title="Core 잔여 727IP"></div><div style="background:var(--green);width:54.2%;transition:width 0.3s" title="스트리밍 여유 1084IP"></div></div><div style="display:flex;gap:16px;margin-top:6px;font-size:0.8rem;color:var(--muted)"><span><span style="color:var(--red)">■</span> 사용 189 IP</span><span><span style="color:var(--blue)">■</span> Core 잔여 727 IP</span><span><span style="color:var(--green)">■</span> 스트리밍 여유 1084 IP</span></div></div>
+<details open><summary>로스터 SP 티어</summary><div class="tbl-wrap"><table><thead><tr><th style="text-align:left">선수</th><th>티어</th><th title="Core Score (0-100)">점수</th><th title="남은 proj_ros IP">잔여 IP</th><th title="ROS 가치 (퍼센타일)">ROS</th><th title="팀 적합도">팀 핏</th><th>슬롯</th></tr></thead><tbody>
+<tr><td style="text-align:left">Jack Flaherty</td><td><span class="tag tag-green">Core</span></td><td>80</td><td>162</td><td>1.00</td><td>0.50</td><td><span class="tag tag-gray">SP</span></td></tr>
+<tr><td style="text-align:left">Shota Imanaga</td><td><span class="tag tag-green">Core</span></td><td>77</td><td>114</td><td>0.77</td><td>0.67</td><td><span class="tag tag-gray">BN</span></td></tr>
+<tr><td style="text-align:left">Aaron Nola</td><td><span class="tag tag-green">Core</span></td><td>75</td><td>146</td><td>0.85</td><td>0.52</td><td><span class="tag tag-gray">BN</span></td></tr>
+<tr><td style="text-align:left">Ranger Suarez</td><td><span class="tag tag-green">Core</span></td><td>67</td><td>142</td><td>0.69</td><td>0.53</td><td><span class="tag tag-gray">BN</span></td></tr>
+<tr><td style="text-align:left">Chase Burns</td><td><span class="tag tag-yellow">조건부</span></td><td>64</td><td>143</td><td>0.62</td><td>0.47</td><td><span class="tag tag-gray">SP</span></td></tr>
+<tr><td style="text-align:left">Yusei Kikuchi</td><td><span class="tag tag-green">Core</span></td><td>64</td><td>163</td><td>0.92</td><td>0.42</td><td><span class="tag tag-gray">P</span></td></tr>
+<tr><td style="text-align:left">Seth Lugo</td><td><span class="tag tag-yellow">조건부</span></td><td>53</td><td>114</td><td>0.54</td><td>0.53</td><td><span class="tag tag-gray">P</span></td></tr>
+<tr style="background:var(--red-bg)"><td style="text-align:left">Zack Littell</td><td><span class="tag tag-red">스트리밍</span></td><td>34</td><td>106</td><td>0.38</td><td>0.46</td><td><span class="tag tag-gray">P</span></td></tr>
+<tr style="background:var(--red-bg)"><td style="text-align:left">Tyler Holton</td><td><span class="tag tag-red">스트리밍</span></td><td>17</td><td>52</td><td>0.00</td><td>0.50</td><td><span class="tag tag-gray">RP</span></td></tr>
+</tbody></table></div></details>
+<h3>📥 오늘의 스트리밍 추천</h3>
+<div class="card card-add"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px"><div><span class="tag tag-green">ADD</span> <strong>Keider Montero</strong> <span class="muted">(DET)</span> — 스트림 점수 0.90 <span class="muted">(누적 0.89 · 비율 1.00 · 매치업 0.75)</span></div><div><span class="tag tag-red">DROP</span> <strong>Tyler Holton</strong> <span class="muted">Core 17점</span></div></div><div class="muted" style="margin-top:6px;font-size:0.83rem">예상 IP/선발: 5.0 · 순이득: +0.728</div></div>
+<div class="card card-add"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px"><div><span class="tag tag-green">ADD</span> <strong>Foster Griffin</strong> <span class="muted">(WSH)</span> — 스트림 점수 0.86 <span class="muted">(누적 0.90 · 비율 0.89 · 매치업 0.75)</span></div><div><span class="tag tag-red">DROP</span> <strong>Zack Littell</strong> <span class="muted">Core 34점</span></div></div><div class="muted" style="margin-top:6px;font-size:0.83rem">예상 IP/선발: 4.9 · 순이득: +0.522</div></div>
+<details><summary>FA 스타터 후보 전체 (상위 10명)</summary><div class="tbl-wrap"><table><thead><tr><th style="text-align:left">선수</th><th title="종합 스트림 점수">점수</th><th title="IP/K/W 누적">누적</th><th title="ERA/WHIP 안전도">비율</th><th title="구장 팩터 (역방향)">매치업</th><th title="1선발 예상 IP (주간 합산 ÷ 추정 선발수)">IP/선발</th></tr></thead><tbody>
+<tr><td style="text-align:left">Keider Montero <span class="muted">(DET)</span></td><td><strong>0.898</strong></td><td>0.885</td><td>1.000</td><td>0.750</td><td>5.0</td></tr>
+<tr><td style="text-align:left">Foster Griffin <span class="muted">(WSH)</span></td><td><strong>0.865</strong></td><td>0.896</td><td>0.890</td><td>0.750</td><td>4.9</td></tr>
+<tr><td style="text-align:left">Brent Suter <span class="muted">(LAA)</span></td><td><strong>0.849</strong></td><td>0.838</td><td>0.920</td><td>0.750</td><td>5.1</td></tr>
+<tr><td style="text-align:left">Walker Buehler <span class="muted">(SD)</span></td><td><strong>0.697</strong></td><td>0.896</td><td>0.412</td><td>0.750</td><td>4.8</td></tr>
+<tr><td style="text-align:left">Jacob Lopez <span class="muted">(ATH)</span></td><td><strong>0.573</strong></td><td>0.940</td><td>0.000</td><td>0.750</td><td>5.2</td></tr>
+<tr><td style="text-align:left">Ryan Weiss <span class="muted">(HOU)</span></td><td><strong>0.427</strong></td><td>0.615</td><td>0.000</td><td>0.750</td><td>5.0</td></tr>
+<tr><td style="text-align:left">Patrick Corbin <span class="muted">(TOR)</span></td><td><strong>0.402</strong></td><td>0.560</td><td>0.000</td><td>0.750</td><td>5.0</td></tr>
+<tr><td style="text-align:left">Brandon Sproat <span class="muted">(MIL)</span></td><td><strong>0.399</strong></td><td>0.554</td><td>0.000</td><td>0.750</td><td>5.2</td></tr>
+</tbody></table></div></details>
+<h2>💡 추천</h2>
+<div class="card"><span class="tag tag-green">✅ 일반 드랍/애드 없음</span> <span class="tag tag-yellow">🔄 IL 슬롯 검토 항목 있음 — 아래 참조</span></div>
+<h3 style="margin-top:20px;margin-bottom:8px">📋 드랍 후보 없는 이유</h3>
+<div class="card" style="border-left:4px solid var(--yellow);margin-bottom:10px"><div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:6px"><div><strong>Wyatt Langford</strong> <span class="tag tag-gray">TEX · OF</span><span class="muted" style="font-size:0.8rem;margin-left:6px">7일 OPS 0.964</span></div><span class="tag tag-yellow">🟡 관찰</span></div><div style="display:grid;gap:8px;margin-top:10px;font-size:0.88rem"><div><span class="muted" style="font-size:0.78rem;font-weight:600">보유 이유</span><div class="reason">Langford는 건강한 상태를 유지하고 있으며, 시즌 예측 스탯(AVG .277, OPS .899)이 현재 30일 부진(AVG .183, OPS .543)과 큰 괴리를 보이므로 회복 가능성이 충분하다. 특히 7일 스탯에서 OPS .964를 기록한 것처럼 단기 변동성이 크므로, 장기 잠재력을 바탕으로 추가 관찰이 필요하다.</div></div><div><span class="muted" style="font-size:0.78rem;font-weight:600">현재 리스크</span><div class="reason">지난 30일간 타율과 출루율의 지속적인 악화가 가장 큰 우려 지점이며, 현재 추세가 계속될 경우 로스터 가치가 빠르게 하락할 수 있다.</div></div><div><span class="muted" style="font-size:0.78rem;font-weight:600">드랍 조건</span><div class="reason">다음 2주 내 30일 스탯 개선 추세가 명확하게 나타나지 않거나, 팀 라인업에서 출전 기회가 감소하는 경우 드랍을 재검토해야 한다.</div></div></div></div>
+<div class="card" style="border-left:4px solid var(--yellow);margin-bottom:10px"><div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:6px"><div><strong>Trevor Megill</strong> <span class="tag tag-gray">MIL · RP</span><span class="muted" style="font-size:0.8rem;margin-left:6px">7일 ERA 63.000</span></div><span class="tag tag-yellow">🟡 관찰</span></div><div style="display:grid;gap:8px;margin-top:10px;font-size:0.88rem"><div><span class="muted" style="font-size:0.78rem;font-weight:600">보유 이유</span><div class="reason">Trevor Megill은 건강 상태가 양호하고 시즌 예측 성적(ERA 3.29, WHIP 1.14)이 합리적 수준이므로 즉시 드랍할 이유가 없습니다. 최근 30일 데이터에서 안정화 추세(ERA 14.4 → 예측 3.29)를 보이고 있어 투구 기회 회복 가능성이 있습니다.</div></div><div><span class="muted" style="font-size:0.78rem;font-weight:600">현재 리스크</span><div class="reason">7일과 14일 극도로 제한된 투구 이닝(1.0 → 3.0)과 높은 ERA는 현재 역할 확보 불확실성을 시사합니다. 팀 약점 카테고리(IP, W, ERA, WHIP)와 일치하는 약한 실적이 계속되면 로스터 가치가 급격히 하락할 수 있습니다.</div></div><div><span class="muted" style="font-size:0.78rem;font-weight:600">드랍 조건</span><div class="reason">향후 2주 이내 투구 기회가 지속적으로 증가하지 않거나, 실제 등판에서 ERA/WHIP이 시즌 예측치 이상으로 악화된다면 드랍을 검토해야 합니다. 또한 밀워키 불펜 구성 변화나 역할 축소가 발생할 경우 대체 선수 확보 후 제거</div></div></div></div>
+<div class="card" style="border-left:4px solid var(--green);margin-bottom:10px"><div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:6px"><div><strong>Bryan Abreu</strong> <span class="tag tag-gray">HOU · RP</span><span class="muted" style="font-size:0.8rem;margin-left:6px">7일 ERA 3.380</span></div><span class="tag tag-green">🟢 보유</span></div><div style="display:grid;gap:8px;margin-top:10px;font-size:0.88rem"><div><span class="muted" style="font-size:0.78rem;font-weight:600">보유 이유</span><div class="reason">Bryan Abreu는 건강 상태가 양호하고 Houston의 불펜 운영 패턴에서 안정적인 역할군을 차지할 가능성이 있어 현재 보유 가치가 있습니다. 특히 시즌 예측 스탯에서 ERA와 WHIP이 개선되는 추세를 보이고 있어 향후 회복을 기대할 수 있습니다.</div></div><div><span class="muted" style="font-size:0.78rem;font-weight:600">현재 리스크</span><div class="reason">최근 30일간 ERA 12.79와 WHIP 3.0으로 극도로 악화된 성적이 심각한 문제입니다. 팀의 약점 카테고리인 ERA, WHIP을 오히려 악화시키고 있어 단기간 로스터 가치에 직접적인 부정적 영향을 미치고 있습니다.</div></div><div><span class="muted" style="font-size:0.78rem;font-weight:600">드랍 조건</span><div class="reason">다음 1~2주 내에 출전 패턴 변화 없이 ERA와 WHIP이 계속 악화되거나, Houston 불펜 내 역할이 축소된다면 드랍을 검토해야 합니다. 또한 동급 이상의 대체 선수가 웨이버 풀에 충분히 존재한다면 더 이상 보유할 이유가 없습니다.</div></div></div></div>
+<h2>🏥 IL 슬롯 평가</h2>
+<div class="card"><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px"><span class="tag tag-green">⭐ 보유 1순위</span><strong>Joe Musgrove</strong> <span class="tag tag-gray">SD · SP</span> <span class="tag tag-yellow">IL-15</span> <span class="tag tag-gray">SP 선발 고정</span></div><div class="muted" style="font-size:0.83rem;margin-bottom:6px">복귀 기대치 70% · 역할 계수 1.00</div><blockquote style="margin-top:4px">Joe Musgrove는 IL-15 중단기 부상 상태이지만 복귀 후 142 이닝, 3.48 ERA, 1.16 WHIP의 안정적인 성적이 예상되어 현재 팀의 선발투수 이닝과 방어율 보강에 매우 중요한 자산입니다. 보유 우선순위 1위로 평가된 만큼 복귀 시점까지 인내심을 가지고 보유하는 것이 권장되며, 복귀 후 대기 중인 로스터 공간이 충분하다면 유지하는 것이 현명합니다. 다만 로스터 압박이 심하다면 Grayson Rodriguez 같은 유사한 IL 상황의 투수로 업그레이드를 검토할 수 있으나, Musgrove의 높은 우선순위를 고려하면 보유를 기본으로 판단해야 합니다.</blockquote><div style="margin-top:8px;padding:8px;background:var(--yellow-bg);border-radius:6px;font-size:0.88rem"><strong>🔄 업그레이드 후보:</strong> Grayson Rodriguez <span class="tag tag-gray">LAA · SP</span> <span class="tag tag-yellow">IL-15</span> <span class="muted">보유율 13%</span></div></div>
+<div class="card"><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px"><span class="tag tag-gray">보유 2순위</span><strong>Hunter Greene</strong> <span class="tag tag-gray">CIN · SP</span> <span class="tag tag-yellow">IL-60</span> <span class="tag tag-gray">SP 선발 고정</span></div><div class="muted" style="font-size:0.83rem;margin-bottom:6px">복귀 기대치 25% · 역할 계수 1.00</div><blockquote style="margin-top:4px">Hunter Greene은 IL-60 장기 부상으로 최소 2개월 이상 복귀가 지연될 것으로 예상되므로, 현재 시점에서는 보유 유지가 어려운 상황입니다. 다만 복귀 후 예상 성적(ERA 3.31, WHIP 1.1, 84이닝)이 안정적이고 팀이 필요로 하는 IP, ERA, WHIP 카테고리에 기여할 수 있어, 로스터 여유가 있다면 2순위 우선순위에 맞춰 단기 보유는 고려할 만합니다. Grayson Rodriguez(IL-15)는 복귀 시점이 더 빠르고 보유율이 낮아 즉각적인 대체 후보로 더 현실적입니다.</blockquote><div style="margin-top:8px;padding:8px;background:var(--yellow-bg);border-radius:6px;font-size:0.88rem"><strong>🔄 업그레이드 후보:</strong> Grayson Rodriguez <span class="tag tag-gray">LAA · SP</span> <span class="tag tag-yellow">IL-15</span> <span class="muted">보유율 13%</span></div></div>
+<hr class="sep">
+<h2>👁️ Drop Watch</h2>
+<div class="card card-drop-ready"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">  <div><strong>Wyatt Langford</strong> <span class="muted">OF</span></div>  <div>    <span class="tag tag-red">드랍 검토</span>    <span class="tag tag-gray">관찰 3일</span>    <span class="muted" style="font-size:0.8rem">진입 2026-04-16</span>  </div></div><div style="margin-top:8px;font-size:0.85rem">오늘 조건: <span class="tag tag-yellow">7일 Z음수</span><span class="tag tag-yellow">14일 Z음수</span></div><p style="font-size:0.88rem;color:var(--red);margin-top:6px">즉시 드랍 검토를 권장합니다.</p></div>
+<details><summary class="muted">회복/보관 1명</summary><ul style="margin:8px 0 0 16px;font-size:0.88rem"><li><strong>Trevor Megill</strong> (2026-04-17 <span class="tag tag-green">회복</span>)</li></ul></details>
+<h2>✍️ 적용 기록</h2><p class="muted" style="margin-bottom:8px">위 체크박스를 체크한 뒤 아래 명령으로 피드백을 저장하세요:</p><pre>python -m src.feedback.import_md reports/$(date +%Y-%m-%d).md</pre>
+</body>
+</html>
